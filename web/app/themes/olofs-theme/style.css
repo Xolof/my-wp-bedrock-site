@@ -1,0 +1,344 @@
+/*
+Theme Name: OlofsCustomTheme
+Text Domain: OlofsCustomTheme
+Version: 1.0
+Description: Fancy left sidebar theme.
+Tags: left-sidebar, responsive, fancy
+Author: Olof Johansson
+Author URI: https://oljo.xyz
+*/
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #ee3577;
+  --red: #dc3545;
+  --orange: #f68e62;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #767575;
+  --gray-dark: #434242;
+  --primary: #6f42c1;
+  --secondary: #4f4f4f;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #c2c2c2;
+  --lightgray: #eeeeee;
+  --dark: #434242;
+  --darkblue: #002261;
+  --lightblue: #004691;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* Font Sizes */
+  --font-normal: 1em;
+  --font-small: 0.8125rem;
+  /* Sidebar */
+  --sidebar-width: 280px;
+  --content-max-width: 860px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+html {
+  background-color: #0a0a0a;
+}
+
+body {
+font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+background-color: #fff;
+}
+
+/**
+* Header
+*/
+.bloginfo {
+  display: none;
+}
+
+.header {
+  background-color: var(--darkblue);
+  padding: 0.4rem;
+}
+
+.header .navbar {
+  display: block;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 0.4em;
+  font-size: 1.25em;
+}
+
+.site-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 5rem;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu ul {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu ul li a {
+  color: #f5f5f5;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  padding: 0 0.4em;
+}
+
+.social-list li {
+  margin-right: 1em;
+}
+
+.navbar-toggler {
+  display: none;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.4rem;
+}
+
+/**
+* Main
+*/
+.main-wrapper {
+  padding: 0.4rem;
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 70%;
+}
+
+.content,
+.header,
+.footer,
+.sidebar {
+  padding: 1em 0.4em 2em;
+}
+
+/**
+* Sidebar
+*/
+.sidebar {
+  width: 30%;
+  padding: 1em 0.4em 2em 1em;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.wp-block-archives-list {
+  list-style: none;
+}
+
+.wp-block-archives-list li {
+  margin-bottom: 0.4em;
+}
+
+/**
+* Footer
+*/
+.footer {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.footer-wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.footer-wrapper li {
+  list-style: none;
+}
+
+.footer-wrapper a {
+  color: #f3f3f3;
+}
+
+.footer-wrapper a:hover {
+  color: #f3f3f3;
+}
+
+/**
+ * General
+ */
+.heading,
+h1,
+h3,
+p {
+  margin-bottom: 1.4em;
+}
+
+.wp-block-archives-list {
+  margin-bottom: 1.4em;
+}
+
+input {
+  padding: 0.5em 0.4em;
+}
+
+input#s {
+  margin-bottom: 0.4em;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  width: 40%;
+}
+
+#searchsubmit,
+#submit {
+  background-color: var(--darkblue);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 0.8em 0.4em;
+}
+
+#searchsubmit:hover,
+#submit:hover {
+  background-color: var(--lightblue);
+}
+
+.meta {
+  margin-bottom: 1.4em;
+}
+
+a {
+  color: var(--darkblue);
+}
+
+a:hover {
+  color: var(--lightblue);
+} */
+
+/**
+* Blog
+*/
+.post-thumb {
+  width: 10rem;
+  border-radius: 2px;
+  margin-bottom: 1.4em;
+}
+
+.post h3 {
+  margin-bottom: 1.4em;
+}
+
+.post {
+  margin-bottom: 3.6em;
+}
+
+.meta span {
+  margin-right: 1em;
+}
+
+.meta span.tag {
+  color: var(--darkblue);
+}
+
+.comments-wrapper {
+  margin-top:1.4em;
+}
+
+.comments {
+  margin-bottom: 2.4em;
+}
+
+.comment {
+  margin-top: 2.4em;
+}
+
+.comment-author .avatar {
+  display: block;
+  margin-bottom: 1.4em;
+}
+
+#cancel-comment-reply-link {
+  display: block;
+  margin-bottom: 1em;
+}
+
+textarea#comment,
+input#author,
+input#email,
+input#url,
+input#cookies-consent {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 40vh;
+}
+
+textarea#comment {
+  min-height: 10vh;
+}
+
+.wp-block-image.size-full img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 2px;
+}
+
+#respond {
+  padding-top: 1.4em;
+}
+
+ @media(max-width: 1000px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .content,
+  .sidebar {
+    width: 100%;
+  }
+
+  #searchsubmit,
+  #submit,
+  #s {
+    width: 100%;
+  }
+}

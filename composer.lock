@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8199b06f9812c8705de223a6ab5def06",
+    "content-hash": "f2e59f9de099f59db5f08fdd97d7b72b",
     "packages": [
         {
             "name": "composer/installers",
@@ -1099,6 +1099,24 @@
             "time": "2022-10-16T01:01:54+00:00"
         },
         {
+            "name": "wpackagist-plugin/forminator",
+            "version": "1.22.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/forminator/",
+                "reference": "tags/1.22.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/forminator.1.22.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/forminator/"
+        },
+        {
             "name": "wpackagist-theme/twentytwentythree",
             "version": "1.0",
             "source": {
@@ -1601,5 +1619,5 @@
         "php": ">=7.4"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.1.0"
 }

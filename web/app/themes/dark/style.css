@@ -53,7 +53,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 :root {
 	--black: #161616;
-	--link-color: #6e6ea7;
+	--link-color: #e98b33;
   }
 
 html {
@@ -660,6 +660,9 @@ a:active {
 .site-title a {
 	text-decoration: none;
 	color: var(--link-color);
+	background-color: var(--black);
+	border-radius: 4px;
+	padding: 0.2em;
 }
 
 .site-description {
@@ -728,9 +731,15 @@ a:active {
 	background-color: var(--link-color);
 }
 
+
+.menu-1 li {
+	border-radius: 4px;
+	border: 2px solid transparent;
+}
+
 .menu-1 li:hover,
 .menu-1 li.focus {
-	background-color: var(--link-color)
+	border: 2px solid var(--link-color);
 }
 
 .menu-1 ul li:hover > ul,
@@ -975,7 +984,7 @@ a:active {
 	text-decoration: none
 }
 .comment-author a {
-	color: var(--black);
+	color: var(--link-color);
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -987,7 +996,7 @@ a:active {
 
 .comment-author cite {
 	font-style: normal;
-	color: var(--black);
+	color: #eee;
 	font-weight: bold
 }
 
@@ -1178,9 +1187,13 @@ object {
 	display: block;
 }
 
+#site-navigation {
+	padding-top: 0.4em;
+}
 
 .forminator-field button {
 	background-color: var(--link-color) !important;
+	color: var(--black) !important;
 }
 
 /*--------------------------------------------------------------

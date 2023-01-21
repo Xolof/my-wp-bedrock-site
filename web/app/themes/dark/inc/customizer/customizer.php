@@ -61,7 +61,7 @@ function scaffold_brightness( $hex, $steps ) {
  */
 function scaffold_customizer_css() {
 
-	$bg_color = get_theme_mod( 'navigation-bg-color', '#253e80' );
+	// $bg_color = get_theme_mod( 'navigation-bg-color', '#253e80' );
 	?>
 	<style>
 		.menu-1 {

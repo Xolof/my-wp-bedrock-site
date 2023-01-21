@@ -51,8 +51,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 # Normalize
 --------------------------------------------------------------*/
 
+:root {
+	--black: #161616;
+	--link-color: #6e6ea7;
+  }
+
 html {
-	font-family: sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -123,7 +128,7 @@ h1 {
 
 mark {
 	background: #ff0;
-	color: #000;
+	color: #eee;
 }
 
 small {
@@ -171,7 +176,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: monospace, monospace;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-size: 1em;
 }
 
@@ -187,6 +192,7 @@ textarea {
 
 button {
 	overflow: visible;
+	color: var(--black);
 }
 
 button,
@@ -267,8 +273,8 @@ th {
 --------------------------------------------------------------*/
 
 body {
-	color: #303135;
-	font-family: Georgia;
+	color: #eee;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-size: 16px;
 	line-height: 1.6;
 	overflow-wrap: break-word;
@@ -277,7 +283,7 @@ body {
 nav,
 label,
 input {
-	font-family: sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-size: 14px
 }
 
@@ -287,9 +293,9 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	line-height: 1.25;
-	color: #2d2e33;
+	color: #eee;
 }
 
 p {
@@ -360,7 +366,8 @@ html {
 }
 
 body {
-	background-color: #fff; /* Fallback for when there is no custom background color defined. */
+	/* background-color: #fff; Fallback for when there is no custom background color defined. */
+	background-color: var(--black);
 }
 
 blockquote:before,
@@ -425,7 +432,7 @@ figure {
 }
 
 table {
-	font-family: sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	margin: 0 0 1.5em;
 	width: 100%;
 	font-size: 14px;
@@ -455,9 +462,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
+	border-color: var(--link-color);
 	border-radius: 3px;
-	background-color: #e6e6e6;
+	background-color: var(--link-color);
 	padding: 8px;
 }
 
@@ -465,7 +472,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
+	border-color: var(--link-color);
 }
 
 button:focus,
@@ -476,7 +483,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
+	border-color: var(--link-color);
 }
 
 input[type="text"],
@@ -533,13 +540,13 @@ textarea {
 --------------------------------------------------------------*/
 
 a {
-	color: #253e80;
+	color: var(--link-color);
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #253e80;
+	color: var(--link-color);
 }
 
 a:focus {
@@ -644,7 +651,7 @@ a:active {
 
 .site-title {
 	margin: 0;
-	font-family: sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-weight: 300;
 	font-size: 40px;
 	line-height: 1.2
@@ -652,7 +659,7 @@ a:active {
 
 .site-title a {
 	text-decoration: none;
-	color: #253e80;
+	color: var(--link-color);
 }
 
 .site-description {
@@ -665,7 +672,6 @@ a:active {
 --------------------------------------------------------------*/
 
 .menu-1 {
-	background-color: #253e80;
 	font-size: 14px;
 	margin-bottom: 50px
 }
@@ -719,12 +725,12 @@ a:active {
 }
 
 .menu-1 ul ul li {
-	background-color: #182b5f;
+	background-color: var(--link-color);
 }
 
 .menu-1 li:hover,
 .menu-1 li.focus {
-	background-color: #182b5f
+	background-color: var(--link-color)
 }
 
 .menu-1 ul li:hover > ul,
@@ -792,7 +798,7 @@ a:active {
 
 .entry-title a {
 	text-decoration: none;
-	color: black;
+	/* color: black; */
 }
 
 .entry-meta {
@@ -825,7 +831,7 @@ a:active {
 }
 .entry-footer a {
 	text-decoration: none;
-	color: #303135
+	color: var(--link-color);
 }
 
 .comments-closed .entry-footer {
@@ -908,7 +914,7 @@ a:active {
 
 .nav-links a {
 	text-decoration: none;
-	color: #303135;
+	color: var(--black);
 }
 
 .post-navigation .nav-links a  {
@@ -969,7 +975,7 @@ a:active {
 	text-decoration: none
 }
 .comment-author a {
-	color: #303135;
+	color: var(--black);
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -981,7 +987,7 @@ a:active {
 
 .comment-author cite {
 	font-style: normal;
-	color: #303135;
+	color: var(--black);
 	font-weight: bold
 }
 
@@ -1170,6 +1176,11 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+.forminator-field button {
+	background-color: var(--link-color) !important;
 }
 
 /*--------------------------------------------------------------
